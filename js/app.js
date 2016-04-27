@@ -43,7 +43,7 @@ prefr.config([
 
 	function($config, $routeProvider, $locationProvider, $httpProvider, apiProvider, ngGitReleasesProvider) {
 
-		if(!prefrConfig){
+		if(!window.prefrConfig){
 			console.error('missing prefr config. Please load config.js');
 		}
 
