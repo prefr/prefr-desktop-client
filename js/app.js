@@ -47,7 +47,7 @@ prefr.config([
 			console.error('missing prefr config. Please load config.js');
 		}
 
-		ngPrefrApiProvider
+		apiProvider
 		.setApiUrl(prefrConfig.apiUrl) //from config.js
      
 
