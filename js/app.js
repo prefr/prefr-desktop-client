@@ -43,9 +43,13 @@ prefr.config([
 
 	function($config, $routeProvider, $locationProvider, $httpProvider, apiProvider, ngGitReleasesProvider) {
 
-		apiProvider
-		//.setApiUrl('https://api.prefr.org/api')        
-		.setApiUrl('/api')        
+		if(!prefrConfig){
+			console.error('missing prefr config. Please load config.js');
+		}
+
+		ngPrefrApiProvider
+		.setApiUrl(prefrConfig.apiUrl) //from config.js
+     
 
 		$routeProvider
 		.when(
