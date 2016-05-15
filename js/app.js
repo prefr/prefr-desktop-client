@@ -55,7 +55,7 @@ prefr.config([
 		.when(
 			'/ballotBox/new',
 			{
-				templateUrl :   'partials/new_ballot_box.html',
+				templateUrl :   '/partials/new_ballot_box.html',
 				controller  :   'NewBallotBoxCtrl',
 				reloadOnSearch: false
 			}
@@ -63,28 +63,28 @@ prefr.config([
 		.when(
 			'/ballotBox/:box_id/:admin_secret?',
 			{
-				templateUrl :   'partials/ballot_box.html',
+				templateUrl :   '/partials/ballot_box.html',
 				controller  :   'BallotBoxCtrl'
 			}
 		)
 		.when(
 			'/evaluate/:box_id',
 			{
-				templateUrl :   'partials/evalation.html',
+				templateUrl :   '/partials/evalation.html',
 				controller  :   'EvaluationCtrl'
 			}
 		)
 		.when(
 			'/releases',
 			{
-				templateUrl :   'partials/releases.html',
+				templateUrl :   '/partials/releases.html',
 				controller  :   'GitReleasesCtrl'
 			}
 		)
 		.when(
 			'/pull',
 			{
-				templateUrl :   'partials/pull_test.html'
+				templateUrl :   '/partials/pull_test.html'
 			}
 		)	
 		.otherwise({
