@@ -570,7 +570,7 @@ angular.module('prefrDirectives', [])
 		return  {
 			restrict:       'AE',
 			scope:          true,
-			templateUrl:    'partials/api_indicator.html',
+			templateUrl:    '/partials/api_indicator.html',
 
 			link:           function(scope, element){
 
@@ -603,7 +603,7 @@ angular.module('prefrDirectives', [])
 	function(){
 		return {	
 			restrict: 'A',
-			templateUrl: 'partials/options.html',
+			templateUrl: '/partials/options.html',
 			scope: {
 				options: "=manageOptions"
 			},
