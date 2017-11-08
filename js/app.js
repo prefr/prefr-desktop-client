@@ -47,10 +47,6 @@ prefr.config([
 			console.error('missing prefr config. Please load config.js');
 		}
 
-		$httpProvider.defaults.withCredentials = true;
- 		$httpProvider.defaults.useXDomain = true;
-        delete $httpProvider.defaults.headers.common['X-Requested-With'];
-
 		apiProvider
 		.setApiUrl(prefrConfig.apiUrl) //from config.js
      
