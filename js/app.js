@@ -47,6 +47,8 @@ prefr.config([
 			console.error('missing prefr config. Please load config.js');
 		}
 
+		$httpProvider.defaults.withCredentials = true;
+
 		apiProvider
 		.setApiUrl(prefrConfig.apiUrl) //from config.js
      
